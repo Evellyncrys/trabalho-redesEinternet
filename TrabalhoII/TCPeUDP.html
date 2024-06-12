@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        header {
+            background-color: #e0f7fa;
+            color: #000000;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #0277bd;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto; /* Garante que o rodapé fique na parte inferior */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>TCP e UDP</h1>
+</header>
+
+<div class="container">
+    <h2>O que é?</h2>
+        <p>O protocolo TCP tem como característica ter uma transmissão confiável ponto-a-ponto, ou seja, se o
+        {Computador (A) transmitir dados para o computador (B), será necessário enviar um ACK (Bit de
+        Reconhecimento) para o computador (B), possibilitando a recuperação dos pacotes, rejeitando os
+        pacotes duplicados e organizando os pacotes que forem chegando.
+        O TCP tem algumas características especificas como ordenar os pacotes, não possibilita o acumulo
+        de pacotes na rede, e consegue transmitir ao mesmo momento a vários destinos diferentes, quando
+        inicia uma conexão ou também a fecha.</p>
+        <p>O UDP é um protocolo que não é confiável, pois ele só envia os dados para o host de destino, por
+            exemplo ele embala os datagramas e simplesmente envia, sem pedir confirmação de pacote ou
+            verificar erros nos pacotes.
+            Este protocolo não dá garantias que o pacote será enviado até o seu destino, e muito menos que
+            elas cheguem à ordem, pois não possui métodos para gerenciar os fluxos de dados.
+            O protocolo UDP é muito utilizado em serviço de multimídia (streaming e VOIP), pois se houver
+            perda de dados não ocasiona delay na transmissão, se por acaso algum pacote for perdido, o
+            mesmo não será perceptível para o usuário.</p>
+</div>
+<footer>
+    <p>&copy; 2024 Trabalho de Internet e Redes. Alunos:  Evellyn, Leidylaine, Flaviane, Daniel.</p>
+</footer>
+
+</body>
+</html>
